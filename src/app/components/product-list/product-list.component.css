@@ -38,3 +38,24 @@
   width: 25%;
   margin: 10px 0;
 }
+
+.card-buy-button {
+  color: goldenrod;
+  box-shadow: rgba(218, 165, 32, 0.82) 0 0 0 1px;
+  font-weight: bolder;
+}
+
+.card-buy-button:hover {
+  background-color: goldenrod !important;
+  color: #fff;
+  box-shadow: 0 0 0 1px #fff;
+  transition: color 0.5s ease-in-out;
+  font-weight: bolder;
+}
+
+.more-info-button {
+  background-color: #171e26;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+}
