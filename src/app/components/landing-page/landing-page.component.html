@@ -1,14 +1,14 @@
-<img src="assets/gear-banner.jpg" alt="" class="hero-image">
+<img src="assets/no-kings-bg.jpg" alt="" class="hero-image">
 <div class="featured-container">
   <h1 class="featured-title">Featured</h1>
   <div class="featured-items">
-    <mat-card *ngFor="let product of products" class="featured-item">
+    <mat-card *ngFor="let product of products | slice:0:6; let i=index" class="featured-item">
       <mat-card-header>
         <mat-card-title>{{ product.name }}</mat-card-title>
       </mat-card-header>
       <img src="{{ product.src }}" alt="" class="featured-image">
       <mat-card-actions class="card-actions">
-        <button mat-button (click)="buyNow()">Buy Now</button>
+        <button mat-button (click)="addToCart(this.product)">Add to Cart</button>
         <a
           [title]="product.name + ' details'"
           [routerLink]="['/products', product.id]">

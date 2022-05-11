@@ -10,9 +10,16 @@ export class LandingPageComponent {
   products = products;
   cart = [];
 
+  constructor() {
+    // @ts-ignore
+    this.cart = JSON.parse(localStorage.getItem('cart'));
+  }
 
-  buyNow() {
-    //add product to cart and redirect to cart page
 
+
+  addToCart(product: any) {
+    // @ts-ignore
+    this.cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(this.cart));
   }
 }

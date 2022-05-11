@@ -8,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class ProductInfoComponent implements OnInit {
   product: any;
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit(): void {
   }
 
+  ngOnInit(): void {
+
+  }
+
+  addToCart(product: any) {
+    console.log(product);
+  }
 }

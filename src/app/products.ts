@@ -227,5 +227,18 @@ export const products = [
        url: 'https://viktos.com/',
     },
   },
+  {
+    id: 16,
+    name: 'Hooktown Hat',
+    price: 34.99,
+    description: 'Mid-profile fit with woven label graphic. US Veteran designed and developed.  ',
+    src: './assets/viktos-hat.jpg',
+    category: 'apparel',
+    company: {
+       name: 'VIKTOS',
+       src: './assets/viktos-logo.png',
+       url: 'https://viktos.com/',
+    },
+  },
 ];
 
