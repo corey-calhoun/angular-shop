@@ -1,0 +1,45 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  margin-bottom: 20px;
+}
+
+.featured-container {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.featured-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  padding: 10px;
+}
+
+.featured-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: whitesmoke !important;
+  box-shadow: #171e26 0px 0px 5px;
+  font-size: 1.2rem;
+  color: #171e26 ;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 10px 0;
+}

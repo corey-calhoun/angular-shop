@@ -1,0 +1,9 @@
+<a [routerLink]="['/']">
+  <h1>Coffee Shop</h1>
+</a>
+
+<a *ngIf="user; else loggedOut" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+
+<ng-template #loggedOut>
+  <a [routerLink]="['/login']" class="button fancy-button">Login</a>
+</ng-template>
